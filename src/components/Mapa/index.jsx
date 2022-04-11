@@ -22,7 +22,9 @@ export function Mapa() {
           let localizacao = await Location.getCurrentPositionAsync()    
           setOrigem({
             latitude: localizacao.coords.latitude,
-            longitude: localizacao.coords.longitude, 
+            longitude: localizacao.coords.longitude,
+            /*latitude: -23.290086229336055, //Latitude e Longitude da Fatec
+            longitude: -47.29599191718996, */ 
             latitudeDelta: 0.00922,
             longitudeDelta: 0.00421,
           })
